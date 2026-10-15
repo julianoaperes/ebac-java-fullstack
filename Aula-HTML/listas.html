@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Listas</title>
+	</head>
+	<body>
+		<header>
+			<h1>Listas</h1>
+            <hr />
+		</header>
+		<main>
+			<section>
+				<h2>Listas Ordenadas</h2>
+				<p>
+					As listas ordenadas em HTML organizam itens em uma sequência
+					identificada por números ou letras. São úteis quando a ordem importa,
+					como em instruções, etapas de cadastro, rankings e receitas.
+				</p>
+				<p>
+					A tag "< ol >" significa Ordered List e delimita a lista ordenada. A
+					tag "< li >" significa List Item e representa cada item da lista.
+				</p>
+
+				<h2>Exemplo</h2>
+				<ol>
+					<li>Primeiro item</li>
+					<li>Segundo item</li>
+					<li>Terceiro item</li>
+				</ol>
+
+				<h2>Atributo "type": formato dos marcadores</h2>
+				<ul>
+                    <li>O atributo type define o tipo de numeração. Números decimais — padrão:
+					1,2,3...</li>
+                    <li>Letras maiúsculas: A,B,C...</li>
+                    <li>Letras minúsculas: a,b,c... </li>
+                    <li>Algarismos romanos maiúsculos: I,II,III ... </li>
+                    <li>Algarismos romanos minúsculos: i, ii, iii ... </li>
+                </ul>
+
+				<h2>Exemplo</h2>
+				<ol type="A">
+					<li>Introdução</li>
+					<li>Desenvolvimento</li>
+					<li>Conclusão</li>
+				</ol>
+
+				<h2>Atributo start: número inicial</h2>
+				<p>
+					Por padrão, a lista começa em 1. O atributo start permite escolher
+					outro número inteiro.
+				</p>
+
+				<h2>Exemplo</h2>
+				<ol start="5">
+					<li>Revisar os dados</li>
+					<li>Enviar o formulário</li>
+					<li>Aguardar a confirmação</li>
+				</ol>
+				<p>
+					Mesmo quando o formato usa letras ou algarismos romanos, o valor de
+					start deve ser um número inteiro:
+				</p>
+				<h2>Exemplo</h2>
+				<ol type="A" start="3">
+					<li>Terceira opção</li>
+					<li>Quarta opção</li>
+				</ol>
+
+				<h2>Atributo reversed: ordem decrescente</h2>
+				<p>
+					Reversed é um atributo booleano: sua presença ativa o comportamento.
+					Portanto, reversed="false" também ativa a contagem decrescente. Para
+					desativá-la, remova o atributo.
+				</p>
+				<h2>Exemplo</h2>
+				<ol reversed>
+					<li>Terceiro lugar</li>
+					<li>Segundo lugar</li>
+					<li>Primeiro lugar</li>
+				</ol>
+				<h2>Atributo value: alterar a numeração de um item</h2>
+				<p>
+					O atributo value pertence ao "< li >" e permite definir o número daquele item. Os próximos continuam a
+						contagem a partir dele.
+					</li>
+				</p>
+				<h2>Exemplo</h2>
+				<ol>
+					<li>Primeira etapa</li>
+					<li value="5">Etapa com numeração alterada</li>
+					<li>Próxima etapa</li>
+				</ol>
+                <hr />
+                <h2>Listas <strong>NÃO</strong> Ordenadas</h2>
+                <p>As listas não ordenadas em HTML agrupam itens cuja sequência não é importante. Elas usam marcadores, geralmente bolinhas, em vez de números ou letras. São úteis para listas de compras, características de produtos, menus e conjuntos de opções.</p>
+                <p>Estrutura: "< ul >" e "< li >"". A tag "< ul >"" (Unordered List) delimita a lista, enquanto "< li >" (List Item) representa cada item.</p>
+                <h2>Exemplo</h2>
+                <ul>
+					<li>Primeiro item</li>
+					<li>Segundo item</li>
+					<li>Terceiro item</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>
