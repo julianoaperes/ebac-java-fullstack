@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabelas</title>
+	</head>
+	<body>
+		<h1>Tabelas</h1>
+		<p>
+			As tabelas em HTML organizam dados em linhas e colunas, permitindo
+			relacionar e comparar informações. São úteis para apresentar notas,
+			preços, resultados de testes e cadastros.
+		</p>
+		<h2>Tags</h2>
+		<ul>
+			<li>"< table >":Define a tabela</li>
+			<li>"< caption >":Define o título ou a descrição da tabela</li>
+			<li>"< tr >":Define uma linha</li>
+			<li>"< th >":Define uma célula de cabeçalho</li>
+			<li>"< td >":Define uma célula de dados</li>
+			<li>"< thead >":Agrupa as linhas de cabeçalho</li>
+			<li>"< tbody >":Agrupa as linhas de dados</li>
+			<li>"< tfoot >":Agrupa as linhas de rodapé, como totais</li>
+		</ul>
+       
+		<h2>Cabeçalho</h2>
+			A tag "< th >" identifica um cabeçalho, que pode descrever uma coluna ou uma linha.O
+				atributo scope informa a quais células o cabeçalho se refere:
+				<ul>
+					<li>scope="col": cabeçalho de uma coluna.</li>
+					<li>scope="row": cabeçalho de uma linha.</li>
+				</ul>
+        <h3>Exemplo</h3>
+        <table>
+            <tr>
+                <th scope="col">Pessoa</th>
+                <th scope="col">Nota</th>
+            </tr>
+            <tr>
+                <th scope="row">Juliano</th>
+                <td>9</td>
+            </tr>
+        </table>
+        <h2>Título "< caption >"</caption></h2>
+			A tag "< caption > fornece um título ou uma descrição breve para a tabela. Ela deve aparecer logo após a abertura de "< table >".
+				<ul>
+					<li>scope="col": cabeçalho de uma coluna.</li>
+					<li>scope="row": cabeçalho de uma linha.</li>
+				</ul>
+        <h3>Exemplo</h3>
+        <table>
+    <caption>Resultados dos testes automatizados</caption>
+    <tr>
+        <th scope="col">Cenário</th>
+        <th scope="col">Resultado</th>
+    </tr>
+    <tr>
+        <td>Login com dados válidos</td>
+        <td>Aprovado</td>
+    </tr>
+</table>
+<hr />
+ <h3>Exemplo</h3>
+        <table>
+					<caption>
+						Notas em Matemática
+					</caption>
+					<thead>
+						<tr>
+							<th>Nome do aluno</th>
+							<th>Nota do aluno</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Aluno A</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>Aluno B</td>
+							<td>7</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Média</td>
+							<td>7,5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</th>
+	</body>
+</html>
