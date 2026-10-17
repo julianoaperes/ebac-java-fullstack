@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulários</title>
+	</head>
+	<body>
+		<h1>Formulários</h1>
+		<p>
+			Os formulários em HTML permitem coletar informações do usuário, como nome,
+			e-mail, senha e opções de preferência. São usados em cadastros, login,
+			pesquisas, buscas e envio de mensagens. O HTML define os campos e algumas
+			regras de validação. O processamento dos dados, como salvar um cadastro ou
+			verificar uma senha, normalmente acontece no back-end.
+		</p>
+		<p>
+            <h2>Tag "< form >"": estrutura do formulário</h2>
+            Esta tag agrupa os campos e define como os dados serão enviados.
+        </p>
+        <h3>Exemplo</h3>
+        <form>
+            <label for="Nome"> Nome </label> 
+            <input id="Nome" type="text" placeholder="Digite seu nome"  /><br />
+            <label for="email"> E-mail </label>
+            <input id="email" type="email" placeholder="e-mail@exemplo.com" /><br />
+            <label for="celular"> Celular </label>
+            <input id="celular" type="tel" placeholder="+55 (XX) x xxxx xxxx"/><br />
+            <Label> Número</Label>
+            <input type="number" max="10" min="-10" step="2"/><br />
+            <label>Adicione o arquivo</label>
+            <input type="file"/><br />
+            <label>Escolha a cor</label>
+            <input type="color"/><br />
+            <label for="checkbox-Aceito-os-termos"> Aceito os termos </label>
+            <input type="checkbox" id="checkbox-Aceito-os-termos" /><br />
+            <p>
+                Qual sua cor favorita?
+            </p>
+            <input type="radio" id="cor-Verde" name="cor-favorita"/> <label for="cor-Verde">Verde</label>
+            <input type="radio" id="cor-Vermelho" name="cor-favorita"/><label for="cor-Vermelho">Vermelho</label>
+            <input type="radio" id="cor-Azul" name="cor-favorita"/><label for="cor-Azul">Azul</label>
+            <p>
+                Qual seu filme favorito?
+            </p>
+            <select>
+                <option>Filme A</option>
+                <option>Filme B</option>
+                <option>Filme C</option>
+                <option>Filme D</option>
+            </select> <br />
+            <label>Deixe sua mensagem</label> <br />
+            <textarea></textarea> <br />
+            <button type="submit">Enviar Formulário</button>
+            <button type="reset">Limpar</button>
+        </form>
+	</body>
+</html>
