@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Tarefa HTML5: Boas práticas</title>
+
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 24px;
+				line-height: 1.6;
+				color: #222;
+			}
+
+			nav a {
+				margin-right: 16px;
+			}
+
+			section {
+				margin-bottom: 32px;
+			}
+
+			/* Personalização da linha horizontal com CSS */
+			hr {
+				border: 0;
+				height: 2px;
+				background-color: #b22222;
+				width: 100%;
+				margin: 32px 0;
+			}
+
+			fieldset {
+				padding: 20px;
+				border: 1px solid #aaa;
+			}
+
+			.campo {
+				margin-bottom: 16px;
+			}
+
+			.campo label {
+				display: block;
+				margin-bottom: 4px;
+			}
+
+			.campo input,
+			.campo select,
+			.campo textarea {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 8px;
+				font: inherit;
+			}
+
+			button {
+				padding: 10px 20px;
+				cursor: pointer;
+			}
+
+			footer {
+				margin-top: 32px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>Aprendendo HTML5</h1>
+			<p>Estrutura de páginas, textos e formulários.</p>
+
+			<nav aria-label="Navegação principal">
+				<a href="#sobre">Sobre</a>
+				<a href="#contato">Contato</a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="sobre">
+				<h2>Sobre esta página</h2>
+
+				<p>
+					O HTML organiza o conteúdo de uma página usando elementos como
+					títulos, parágrafos e formulários.
+				</p>
+
+				<p>
+					Podemos destacar uma informação com
+					<strong>importância</strong> e dar <em>ênfase</em> a uma expressão.
+				</p>
+
+				<h3>Exemplo de quebra de linha</h3>
+
+				<p>
+					Horário de atendimento:<br />
+					Segunda a sexta, das 9h às 18h.
+				</p>
+			</section>
+
+			<hr />
+
+			<section id="contato">
+				<h2>Entre em contato</h2>
+				<p>Preencha os campos abaixo para enviar sua mensagem.</p>
+
+				<form action="/contato">
+					<fieldset>
+						<legend>Dados para contato</legend>
+
+						<div class="campo">
+							<label for="nome">Nome completo:</label>
+							<input type="text" id="nome" name="nome" />
+						</div>
+
+						<div class="campo">
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="email" />
+						</div>
+
+						<!-- Forma 2: label envolvendo o controle -->
+						<div class="campo">
+							<label>
+								Assunto:
+								<select name="assunto">
+									<option value="">Selecione uma opção</option>
+									<option value="duvida">Dúvida</option>
+									<option value="sugestao">Sugestão</option>
+									<option value="outro">Outro</option>
+								</select>
+							</label>
+						</div>
+
+						<div class="campo">
+							<label for="mensagem">Mensagem:</label>
+							<textarea
+								id="mensagem"
+								name="mensagem"
+								rows="5"
+								maxlength="1000"
+								required></textarea>
+						</div>
+
+						<button type="submit">Enviar mensagem</button>
+					</fieldset>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>Página de estudos de HTML5.</p>
+		</footer>
+	</body>
+</html>
