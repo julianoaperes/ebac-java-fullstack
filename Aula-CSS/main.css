@@ -37,6 +37,9 @@ header li a {
 .articles article img {
 	width: 100%;
 	border-radius: 2%;
+	height: 300px;
+	object-fit: cover;
+	display: block;
 }
 .articles article {
 	width: 30%;
@@ -76,6 +79,8 @@ section h2,
 .articles p {
 	text-align: justify;
 	margin-top: 4px;
+	width: 100%;
+	display: block;
 }
 .articles article h3 {
 	font-size: 24px;
@@ -85,6 +90,18 @@ section h2,
 section h2 {
 	font-size: 32px;
 }
+#entertainment {
+	background-color: #f8f59f;
+}
+#entertainment .articles article a {
+	background-color: #ff9f1a;
+}
+#tech {
+	background-color: rgba(52, 53, 52, 0.11);
+}
+#tech .articles article a {
+	background-color: rgba(3, 3, 3, 0.5);
+}
 #sports {
 	background-color: rgba(0, 255, 0, 0.1);
 }
@@ -92,8 +109,8 @@ section h2 {
 	background-color: #009432;
 }
 #economy {
-	background-color: #f8f59f;
+	background-color: rgba(42, 206, 218, 0.11);
 }
 #economy .articles article a {
-	background-color: #ff9f1a;
+	background-color: rgba(3, 3, 3, 0.5);
 }
